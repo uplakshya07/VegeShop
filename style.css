@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #fff9f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color: #3C2323;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 35px;
+    line-height: 2.5rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+}
+
+.site-title h1{
+    font-size: 2rem;
+}
+
+.site-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.social i{
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #0D1B24;
+}
+
+.navbar nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar nav ul li{
+    list-style: none;
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #0D1B24;
+    font-weight: bold;
+}
+
+.site-title a:hover, .navbar nav ul li a:hover, .social i:hover, #active{
+    color: #1d5a37;
+}
+
+/* intro container */
+.intro-container{
+    display: flex;
+    background-color: #20603C;
+}
+
+.intro-container img{
+    width: 50vw;
+    height: auto;
+    background-color: #3C2323;
+}
+
+.intro-container .intro{
+    color: #FFFDF6;
+    padding: 32px;
+    width: 50vw;
+}
+
+.intro-container div h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.15;
+    letter-spacing: normal;
+    margin: 32px 0;
+}
+
+.intro-container div p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #FFFDF6;
+}
+
+.btn a{
+    color: #FFFDF6;
+    background-color: inherit;
+    border: 2px solid #FFFDF6;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 50px 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn{
+    margin: 45px 0;
+}
+
+.btn a:hover{
+    color: #133623;
+    border-color: #133623;
+}
+
+/*  */
+.section-title h1{
+    font-size: 3.2rem;
+}
+.section-title strong{
+    font-size: 0.9rem;
+}
+.section-title{
+    line-height: 2;
+}
+/* Services section */
+.services-container{
+    padding: 110px;
+    text-align: center;
+    width: 100vw;
+}
+
+.services-container h1, .services-container strong, .expertise-container h1, .expertise-container li, .review strong, .blog-cards h1, .blog-card h1 a{
+    color: #3C2323;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card{
+    width: 33.3%;
+    padding: 25px;
+}
+
+.service-card img{
+    width: 100%;
+}
+
+.service-card p{
+    text-align: left;
+    margin-top: 25px;
+    font-size: 1.4rem;
+    line-height: 1.75;
+}
+
+.break{
+    width: 100%;
+    margin: 10px 0;
+}
+.break hr{
+    margin: auto;
+    opacity: .8;
+}
+
+/* info container */
+.info-container{
+    padding: 110px;
+    text-align: center;
+    /* background-color: #655441; */
+    width: 100vw;
+    color: #fff1f1;
+    /* background-image:url('https://barnsburydemo.files.wordpress.com/2019/09/naseem-buras-cwpy-hpdt9q-unsplash-copy-4.jpg'); */
+    background-image: linear-gradient(rgba(100, 97, 97, 0.26), rgba(0, 0, 0, 0.575)),
+    url("https://barnsburydemo.files.wordpress.com/2019/09/naseem-buras-cwpy-hpdt9q-unsplash-copy-4.jpg");
+    background-size: 100vw 45vw;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    text-shadow: 1px .5px #e9e7e7;
+}
+
+.info{
+    display: flex;
+    margin-top: 10px;
+}
+
+.info div{
+    width: 25%;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.info h1, .expertise-container h1{
+    font-size: 3.2rem;
+}
+.info p{
+    font-size: 1.4rem;
+    color: #FFFDF6;
+}
+
+
+/* expertise container */
+.expertise-container{
+    padding: 50px 110px;
+}
+
+.offerings{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.offerings img, .offerings div{
+    width: 50%;
+    padding: 25px;
+}
+
+.offerings div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offerings div h1{
+    margin-bottom: 30px;
+}
+
+.offerings div p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.offerings div ul{
+    padding: 0 25px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.customer-reviews{
+    display: flex;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.review{
+    width: 33.3%;
+    line-height: 1.5;
+}
+
+.review h1{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.rating{
+    color: #3C2323;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+/* blog container */
+.blog-container{
+    padding: 110px;
+    text-align: center;
+    width: 100vw;
+    background-color: #655441;
+    color: #FFFDF6;
+}
+
+.blog-container .btn{
+    margin-bottom: 0;
+}
+
+.blog-cards{
+    display: flex;
+    margin-top: 40px;
+}
+
+.blog-card{
+    width: 33.3%;
+    text-align: left;
+    line-height: 1.2;
+    padding: 25px;
+}
+
+.blog-card h1 a{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card h1 a:hover{
+    text-decoration: underline;
+    color: #FFFDF6;
+}
+
+.blog-card h1 {
+    margin-bottom: 8px;
+}
+
+.blog-card p{
+    color: #FFFDF6;
+    font-size: 1.2rem;
+    margin: 28px 0;
+}
+
+.blog-card a{
+    margin-top: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #FFFDF6;
+    font-weight: 600;
+}
+
+.blog-card a span{
+    text-decoration: underline;
+    margin-right: 3px;
+}
+
+.blog-card a span:hover{
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 35px;
+    line-height: 2.5rem;
+}
+
+footer a{
+    font-size: 1.2rem;
+    color: #153824;
+    font-weight: bold;
+}
+
+footer .navbar nav ul li a{
+    text-decoration: underline;
+    color: #154429;
+}
+
+/* footer .navbar{
+    flex-direction: row-reverse;
+} */
+
+footer .navbar nav ul li a:hover, footer a:hover{
+    text-decoration: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p{
+    color: rgb(29, 39, 29);
+}
+
+footer .social i{
+    color: #153824;
+}
+
+footer .social i:hover{
+    color: #154429;
+}
